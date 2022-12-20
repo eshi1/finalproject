@@ -7,6 +7,8 @@ public class Main{
        Scanner sc = new Scanner(System.in);
        boolean q1 = false;
        int score = 0;
+
+    //Trivia question 1
     while (!q1){
         timer.count = 1;
         System.out.println("What is a Bombay Duck?");
@@ -14,8 +16,12 @@ public class Main{
         System.out.println("b) A type of curry");
         System.out.println("c) A type of duck");
         System.out.println("d) A basketball term");
+
+        //Timer
         int x = timer.CountDown();
         String guess = sc.nextLine();
+
+        //if else statement that prints out if they guessed the correct answer
         if (guess.equals("a")){
             //timer.count = 0;
             score += 1000;
@@ -28,6 +34,8 @@ public class Main{
             break; 
        }
     }
+
+    //Trivia question 2
     while (!q1){
         //timer.count = 1;
         System.out.println("In New Zealand what is it illegal to fly in a hot air balloon with?");
@@ -49,6 +57,8 @@ public class Main{
             break; 
        }
     }
+
+    //Trivia question 3
     while (!q1){
         //timer.count = 1;
         System.out.println("In the Harry Potter book and film series, Professor Dumbledore’s name comes from the Old English word for what creature?");
@@ -70,6 +80,8 @@ public class Main{
             break; 
        }
     }
+
+    //Trivia question 4
     while (!q1){
         //timer.count = 1;
         System.out.println("The world’s first game of ice hockey was played with a puck made from which material?");
@@ -91,6 +103,8 @@ public class Main{
             break; 
        }
     }
+
+    //Trivia question 5
     while (!q1){
         //timer.count = 1;
         System.out.println("What are you afraid of if you are Syngenesophobic?");
@@ -112,6 +126,8 @@ public class Main{
             break; 
        }
     }
+
+    //Final tally of points
     int bonus = timer.CountDown()*50;
     System.out.println("You earned "+score+" points and "+bonus+" bonus points.");
     }

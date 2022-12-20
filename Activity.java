@@ -9,7 +9,7 @@ public class Activity {
        int score = 0;
     while (!q1){
         timer.count = 1;
-
+        int x = timer.CountDown();
         //TODO: Insert your question and the answer choices in the lines below
 
 

@@ -1,8 +1,10 @@
+//Timer aspect of the game.
+
 import java.util.Timer;
 import java.util.TimerTask;
 public class Countdown{
     public static int count;
-    public static int counter = 50;
+    public static int counter = 50; //the number of seconds implemented for the timer
     public static int CountDown(){
         //Credit for the timer goes to @BroCode (https://www.youtube.com/watch?v=QEF62Fm81h4&ab_channel=BroCode)
         Timer timer = new Timer();
